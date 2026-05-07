@@ -1,0 +1,24 @@
+# .gitignore for .NET/Arch devsetup project
+# Build results
+bin/
+obj/
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+# Logs
+*.log
+# VS Code settings (if any)
+.vscode/
+# Rider files
+.idea/
+# NuGet packages
+*.nupkg
+# Publish output
+publish/
+# Temporary files
+*.tmp
+# OS generated files
+.DS_Store
+Thumbs.db
