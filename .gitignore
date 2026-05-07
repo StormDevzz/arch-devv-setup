@@ -22,3 +22,5 @@ publish/
 # OS generated files
 .DS_Store
 Thumbs.db
+# Ignore nested devsetup repository
+devsetup/
