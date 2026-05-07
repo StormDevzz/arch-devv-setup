@@ -1,67 +1,69 @@
 # Arch Linux Development Setup
 
-## Описание
+## Описание / Description
 
 Этот проект содержит скрипты и утилиты для автоматической настройки среды разработки на Arch Linux. Включает в себя установку необходимых пакетов, настройку окружения и базовых инструментов для разработки.
 
-## Системные требования
+This project contains scripts and utilities for automatic development environment setup on Arch Linux. It includes installation of necessary packages, environment configuration, and basic development tools.
 
-- Arch Linux (или основанные на нем дистрибутивы)
-- Права администратора (sudo)
-- Подключение к интернету
+## Системные требования / System Requirements
 
-## Установка
+- Arch Linux (или основанные на нем дистрибутивы) / Arch Linux (or based distributions)
+- Права администратора (sudo) / Administrator privileges (sudo)
+- Подключение к интернету / Internet connection
 
-### Способ 1: Использование Python скрипта
+## Установка / Installation
+
+### Способ 1: Использование Python скрипта / Method 1: Using Python script
 
 ```bash
-# Клонируйте репозиторий
+# Клонируйте репозиторий / Clone the repository
 git clone https://github.com/StormDevzz/arch-devv-setup.git
 cd arch-devv-setup/devsetup
 
-# Запустите скрипт установки
+# Запустите скрипт установки / Run the setup script
 python3 setup.py
 ```
 
-### Способ 2: Использование C# приложения
+### Способ 2: Использование C# приложения / Method 2: Using C# application
 
 ```bash
-# Убедитесь, что установлен .NET SDK
+# Убедитесь, что установлен .NET SDK / Make sure .NET SDK is installed
 sudo pacman -S dotnet-sdk
 
-# Перейдите в папку проекта
+# Перейдите в папку проекта / Navigate to project directory
 cd devsetup
 
-# Соберите и запустите приложение
+# Соберите и запустите приложение / Build and run the application
 dotnet run
 ```
 
-## Что устанавливается
+## Что устанавливается / What gets installed
 
-### Базовые пакеты
-- `git` - система контроля версий
-- `vim` - текстовый редактор
-- `curl` - утилита для работы с HTTP
-- `wget` - утилита для загрузки файлов
-- `tree` - отображение структуры директорий
+### Базовые пакеты / Basic packages
+- `git` - система контроля версий / version control system
+- `vim` - текстовый редактор / text editor
+- `curl` - утилита для работы с HTTP / HTTP utility
+- `wget` - утилита для загрузки файлов / file download utility
+- `tree` - отображение структуры директорий / directory structure display
 
-### Инструменты разработки
-- `base-devel` - базовые инструменты для сборки
-- `python` - интерпретатор Python
-- `nodejs` - среда выполнения JavaScript
-- `npm` - менеджер пакетов Node.js
-- `docker` - платформа контейнеризации
+### Инструменты разработки / Development tools
+- `base-devel` - базовые инструменты для сборки / basic build tools
+- `python` - интерпретатор Python / Python interpreter
+- `nodejs` - среда выполнения JavaScript / JavaScript runtime
+- `npm` - менеджер пакетов Node.js / Node.js package manager
+- `docker` - платформа контейнеризации / containerization platform
 
-### Дополнительные утилиты
-- `htop` - монитор процессов
-- `neofetch` - информация о системе
-- `zsh` - расширенная командная оболочка
+### Дополнительные утилиты / Additional utilities
+- `htop` - монитор процессов / process monitor
+- `neofetch` - информация о системе / system information
+- `zsh` - расширенная командная оболочка / enhanced command shell
 
-## Использование
+## Использование / Usage
 
-После установки вы можете:
+После установки вы можете / After installation, you can:
 
-1. **Проверить установку**:
+1. **Проверить установку** / **Check installation**:
    ```bash
    git --version
    python3 --version
@@ -69,13 +71,13 @@ dotnet run
    docker --version
    ```
 
-2. **Настроить Git**:
+2. **Настроить Git** / **Configure Git**:
    ```bash
-   git config --global user.name "Ваше имя"
-   git config --global user.email "ваш@email.com"
+   git config --global user.name "Your Name"
+   git config --global user.email "your@email.com"
    ```
 
-3. **Запустить Docker**:
+3. **Запустить Docker** / **Start Docker**:
    ```bash
    sudo systemctl start docker
    sudo systemctl enable docker
@@ -94,38 +96,40 @@ devsetup/
 └── README.md        # Этот файл
 ```
 
-## Устранение проблем
+## Устранение проблем / Troubleshooting
 
-### Проблема: Нет прав на установку пакетов
+### Проблема: Нет прав на установку пакетов / Problem: No package installation permissions
 
-**Решение**: Убедитесь, что у вас есть права sudo:
+**Решение** / **Solution**: Убедитесь, что у вас есть права sudo / Make sure you have sudo privileges:
 ```bash
 sudo pacman -Syu
 ```
 
-### Проблема: .NET SDK не найден
+### Проблема: .NET SDK не найден / Problem: .NET SDK not found
 
-**Решение**: Установите .NET SDK:
+**Решение** / **Solution**: Установите .NET SDK / Install .NET SDK:
 ```bash
 sudo pacman -S dotnet-sdk
 ```
 
-### Проблема: Python скрипт не запускается
+### Проблема: Python скрипт не запускается / Problem: Python script doesn't run
 
-**Решение**: Убедитесь, что установлен Python 3:
+**Решение** / **Solution**: Убедитесь, что установлен Python 3 / Make sure Python 3 is installed:
 ```bash
 sudo pacman -S python
 ```
 
-## Настройка после установки
+## Настройка после установки / Post-installation setup
 
-1. **Перезагрузите систему** для применения всех изменений
-2. **Настройте свою среду разработки** (VS Code, IntelliJ IDEA и т.д.)
-3. **Создайте SSH ключи** для работы с Git:
+1. **Перезагрузите систему** для применения всех изменений / **Reboot system** to apply all changes
+2. **Настройте свою среду разработки** (VS Code, IntelliJ IDEA и т.д.) / **Configure your development environment** (VS Code, IntelliJ IDEA, etc.)
+3. **Создайте SSH ключи** для работы с Git / **Create SSH keys** for Git operations:
    ```bash
-   ssh-keygen -t ed25519 -C "ваш@email.com"
+   ssh-keygen -t ed25519 -C "your@email.com"
    ```
 
-## Лицензия
+## Лицензия / License
 
 Этот проект распространяется под лицензией MIT. Подробности см. в файле LICENSE.
+
+This project is licensed under the MIT License. See the LICENSE file for details.
