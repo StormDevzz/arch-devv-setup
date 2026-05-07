@@ -130,6 +130,6 @@ sudo pacman -S python
 
 ## Лицензия / License
 
-Этот проект распространяется под лицензией MIT. Подробности см. в файле LICENSE.
+Этот проект распространяется под лицензией MIT. Подробности см. в файле [LICENSE](LICENSE).
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
